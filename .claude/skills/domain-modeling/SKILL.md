@@ -7,6 +7,11 @@ description: Build and sharpen a project's domain model. Use when discussing cod
 
 Actively build and sharpen the project's domain model as you design. This is the *active* discipline: challenging terms, inventing edge-case scenarios, and writing the glossary and decisions down the moment they crystallise. (Merely *reading* `CONTEXT.md` for vocabulary is not this skill: that's a one-line habit any skill can do. This skill is for when you're changing the model, not just consuming it.)
 
+> **we-auction conventions (overrides the layout below).**
+> - The glossary / `CONTEXT.md` is `ai/context/glossary.md` (project background: `ai/context/project.md`). Do not create a root `CONTEXT.md`.
+> - ADRs are decision docs in `docs/decision/` (one file per topic, indexed in `docs/decision/README.md`). Do not create `docs/adr/`. Use the `record-decision` skill and `docs/decision/_template.md`; never delete a decision, mark it Superseded.
+> - Only a human moves a decision to `Decided`.
+
 ## File structure
 
 Most repos have a single context:

@@ -24,6 +24,16 @@ the same skills, knowledge, context and decisions, without maintaining N copies.
   Alternative rejected: `ai/skills/` + symlink/sync script (fragile on Windows). Source:
   proposed by Claude, 2026-11-10 — revisit if another agent gets first-class skill support.
 
+- **Skills are committed as files, including third-party ones; nobody has to install a plugin.**
+  What: own skills plus MIT-licensed copies from `obra/superpowers` and `mattpocock/skills`
+  live in `.claude/skills/`, credited in `THIRD_PARTY.md`, license texts in `licenses/`.
+  Why: collaborators may not use Claude Code or install recommended plugins; committed files
+  work for everyone and change only through PRs. Trade-off: copies go stale and add ~150 KB;
+  upstream updates are manual. Alternative rejected: declaring plugins in
+  `.claude/settings.json` (Claude-only, each person must install). Also not copied: the
+  superpowers session hook and its `using-superpowers` skill; `AGENTS.md` has the skill
+  index instead. Source: user decision, 2026-11-10.
+
 ## Open questions
 
 - Add a CI check that tool pointer files still reference `AGENTS.md`? (after stack decision)
