@@ -15,6 +15,8 @@ This repo is **public** — never commit secrets, tokens, `.env` files or person
 
 - Agents start at [`AGENTS.md`](AGENTS.md). Do not create per-tool rule files with duplicate
   content — add rules to `AGENTS.md`.
+- Shared skills are already in the repo (`.claude/skills/`, index in `AGENTS.md`); nothing to
+  install. Changes to a copied third-party skill need a PR that follows `THIRD_PARTY.md`.
 - Review agent-written changes as carefully as human ones. You are the author of record.
 - Put new shared knowledge in `ai/` (see `ai/README.md`), not only in chat or a PR comment.
 

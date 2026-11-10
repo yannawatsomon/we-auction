@@ -24,6 +24,36 @@ read it first. Tool-specific files (`CLAUDE.md`, `.github/copilot-instructions.m
 
 Agents that can't auto-load skills: open the relevant `SKILL.md` and follow it manually.
 
+## Skills
+
+All skills are committed in `.claude/skills/<name>/SKILL.md`, so every collaborator gets the
+same ones whatever tool they use. Third-party ones are listed in
+[`THIRD_PARTY.md`](THIRD_PARTY.md). **Before doing the kind of work in the "When" column, open
+and follow that skill.**
+
+| Skill | When |
+|---|---|
+| `decision-first` | Starting a project area or large feature; discuss and record decisions before code |
+| `record-decision` | A decision is made or must change → `docs/decision/` |
+| `update-ai-hub` | You learned something non-obvious → `ai/` |
+| `brainstorming` | Before any new feature or behavior change |
+| `grilling` | Stress-testing a plan or idea |
+| `domain-modeling` | Naming domain terms (bid, lot, reserve...) and their relationships |
+| `writing-plans` | Turning a spec into a step-by-step task plan |
+| `executing-plans` / `subagent-driven-development` | Carrying out a written plan (inline / with sub-agents) |
+| `using-git-worktrees` | Isolating feature work from your current checkout |
+| `test-driven-development` | Implementing any feature or bugfix |
+| `systematic-debugging` | Any bug, failing test or unexpected behavior, before proposing a fix |
+| `verification-before-completion` | Before saying work is done, fixed or passing |
+| `requesting-code-review` / `receiving-code-review` | Asking for a review / acting on review feedback |
+| `code-review` | Reviewing a branch or PR against standards and the originating issue |
+| `security-review` | Any change touching bidding, money, auth, user input, secrets or config |
+| `resolving-merge-conflicts` | An in-progress merge or rebase conflict |
+| `finishing-a-development-branch` | Work is done and tests pass; deciding how to integrate |
+
+Not yet relevant (stack/UI undecided): frontend/design, testing-strategy and deploy skills.
+Add them via PR when the matching decision is Decided.
+
 ## Working rules
 
 - Branch from `main`; never push to `main` directly. Open a PR (see `CONTRIBUTING.md`).
