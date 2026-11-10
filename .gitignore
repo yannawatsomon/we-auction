@@ -1,0 +1,26 @@
+# Secrets (public repo!)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Personal agent overrides
+CLAUDE.local.md
+.claude/settings.local.json
+.claude/worktrees/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Dependencies / build (stack-agnostic placeholders)
+node_modules/
+dist/
+build/
+coverage/
+*.log
